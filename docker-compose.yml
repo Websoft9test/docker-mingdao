@@ -17,7 +17,7 @@ services:
       COMPlus_ThreadPool_ForceMaxWorkerThreads: 500
     restart: always
     ports:
-      - ${APP_PORT}:8880
+      - ${APP_HTTP_PORT}:8880
     volumes:
       - appdata:/data/
       - tmp:/usr/local/MDPrivateDeployment/wwwapi/tmp/
